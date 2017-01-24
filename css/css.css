@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body,
+html {
+  color: #666;
+  font-size: 12px;
+  font-family: Arial, 'Microsoft YaHei';
+}
+li {
+  list-style: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.display {
+  display: block;
+}
+.topBox {
+  background: #f8f8f8;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+.topBox .inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.topBox ul {
+  float: right;
+}
+.topBox a {
+  color: #666;
+  line-height: 20px;
+  display: block;
+  padding: 0 18px;
+  border-right: 1px dotted #ccc;
+}
+.topBox a i {
+  margin-right: 7px;
+  font-size: 16px;
+}
+.topBox li {
+  float: left;
+  padding: 5px 0;
+}
