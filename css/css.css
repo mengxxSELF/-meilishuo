@@ -14,6 +14,9 @@ html {
 li {
   list-style: none;
 }
+.bodyColor {
+  background: #ff3366;
+}
 .left {
   float: left;
 }
@@ -23,15 +26,22 @@ li {
 .display {
   display: block;
 }
+.pos {
+  position: relative;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.red {
+  color: #ff3366;
+}
 .topBox {
   background: #f8f8f8;
   width: 100%;
   height: 30px;
   overflow: hidden;
-}
-.topBox .inner {
-  width: 1200px;
-  margin: 0 auto;
 }
 .topBox ul {
   float: right;
@@ -50,4 +60,101 @@ li {
 .topBox li {
   float: left;
   padding: 5px 0;
+}
+header {
+  position: relative;
+}
+header .logo {
+  margin-top: 40px;
+  float: left;
+  display: block;
+}
+header .search {
+  position: absolute;
+  left: 50%;
+  top: 21px;
+  margin-left: -240px;
+  width: 520px;
+}
+header ul,
+header .search-box {
+  display: block;
+  overflow: hidden;
+}
+header li {
+  float: left;
+}
+header .search-all li {
+  float: left;
+  width: 56px;
+  background-color: #f2f2f2;
+}
+header .search-all a {
+  line-height: 24px;
+  display: block;
+  text-align: center;
+}
+header .search-all .now a {
+  background: #ff3366;
+  color: #fff;
+}
+header .search-box input {
+  border: 2px solid #FF3366;
+  width: 437px;
+  float: left;
+  padding-left: 8px;
+  line-height: 28px;
+  height: 28px;
+}
+header .search-box span {
+  background: #ff3366;
+  text-align: center  ;
+  width: 70px;
+  line-height: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: block;
+  float: left;
+}
+header .search-box i {
+  color: #fff;
+  font-size: 18px;
+}
+header .search-navs {
+  margin-top: 12px;
+}
+header .search-navs li {
+  margin-right: 10px;
+}
+header .code {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.body {
+  width: 100%;
+  height: 40px;
+}
+.body .head {
+  border-bottom: 1px solid #ff3366;
+  font-size: 14px;
+}
+.body .head li {
+  float: left;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 40px;
+}
+.body .head li:first-child {
+  margin-left: 0;
+}
+.body .head a:hover {
+  color: #ff3366;
+}
+.body span {
+  width: 285px;
+  background: #ff3366;
+  display: block;
+  color: #fff;
 }

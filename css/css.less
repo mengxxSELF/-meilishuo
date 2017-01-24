@@ -1,11 +1,14 @@
 @import 'common';
 
+
+.inner{width: 1200px;margin: 0 auto; overflow: hidden;}
+.red{color: @bodyRed;}
+
 // 页面顶部
 .topBox{
   .bgColor(@bodyGray);
   .size(100%,30px);
   overflow: hidden;
-  .inner{width: 1200px;margin: 0 auto;}
   ul{float: right;}
   a{color: #666;
     line-height: 20px;
@@ -15,6 +18,45 @@
     border-right: 1px dotted #ccc;
   }
   li{.left; padding: 5px 0; }
+}
+// header部分
+
+header{
+  .pos;
+  .logo{margin-top: 40px; .left;.display;}
+  .search{ position: absolute; left: 50%; top: 21px; margin-left: -240px; width: 520px;}
+  .search-all{ }
+  ul , .search-box {.display;overflow: hidden;}
+  li{.left;}
+  .search-all{
+    li{.left;width: 56px;    background-color: #f2f2f2;  }
+    a{line-height: 24px;.display; text-align: center;  }
+    .now a{background: @bodyRed; color: #fff; }
+  }
+  .search-box{
+    input{border:2px solid #FF3366;    width: 437px;  .left; padding-left: 8px;
+      line-height: 28px;  height: 28px;}
+    span{background:@bodyRed;  text-align: center  ;width: 70px; line-height: 32px;  height: 32px;cursor: pointer; .display; .left;   }
+    i{color: #fff; font-size: 18px;}
+  }
+  .search-navs{margin-top: 12px;
+    li{margin-right: 10px;}
+  }
+  .code{position: absolute;right: 0; bottom: 0;}
+}
+
+// body 部分
+.body{
+  .size(100% ,40px);
+  .head{border-bottom:1px solid @bodyRed; font-size: 14px;
+    li{.left; text-align: center; height: 40px; line-height: 40px; margin: 0 40px;  }
+    li:first-child{margin-left: 0; }
+    a:hover{color: @bodyRed;}
+  }
+  span{
+    width:285px; .bodyColor; .display; color: #fff;
+  }
+
 }
 
 
