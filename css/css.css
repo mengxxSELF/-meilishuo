@@ -9,7 +9,7 @@ body,
 html {
   color: #666;
   font-size: 12px;
-  overflow: hidden;
+  height: 2000px;
   font-family: Arial, 'Microsoft YaHei';
 }
 li {
@@ -236,11 +236,43 @@ header .search-navs li {
   margin-right: 10px;
   line-height: 24px;
 }
-.banner {
+.box {
+  position: relative;
+  margin-top: 20px;
   float: right;
   width: 896px;
   height: 447px;
+  overflow: hidden;
+}
+.box ul {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+.box ul li {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: skyblue;
+  float: left;
+  border: 1px solid skyblue;
+  margin-right: 10px;
+}
+.box ul li.now {
+  background: #fff;
+}
+.banner {
+  width: 896px;
+  height: 447px;
+}
+.banner a {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .banner img {
-  width: 100%;
+  width: 896px;
+  height: 447px;
 }

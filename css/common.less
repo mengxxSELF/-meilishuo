@@ -2,7 +2,8 @@
 a{text-decoration: none;}
 body,html{color: #666;
   font-size: 12px;
-  overflow: hidden;
+  height: 2000px;
+  //overflow: hidden;
   font-family: Arial,'Microsoft YaHei';}
 li{list-style: none}
 
@@ -29,6 +30,7 @@ li{list-style: none}
 .pos{position: relative;}
 .posA(@left,@top){position: absolute;left:@left;top:@top;}
 .posAR(@right,@top){position: absolute;right:@right;top:@top;}
+.posBR(@right,@bottom){position: absolute;right:@right;bottom:@bottom;}
 
 // 设置背景色
 .bgColor(@color){

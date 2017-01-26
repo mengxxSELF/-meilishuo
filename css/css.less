@@ -103,10 +103,24 @@ header{
   }
 }
 // banner
-.banner{
+.box{
+  position: relative;
+  margin-top:20px;
   .right;
   .size(896px,447px);
-  img{width: 100%;}
+  overflow: hidden;
+  ul{
+    .posBR(30px,10px);
+    li{display: block; .size(20px,20px); border-radius: 100%;  background: skyblue;.left; border:1px solid skyblue;  margin-right: 10px;
+     &.now{ background: #fff; }
+    }
+  }
+}
+.banner{
+  .size(896px,447px);
+  a{display: none;.posA(0,0);   }
+  img{ .size(896px,447px); }
+
 }
 
 
