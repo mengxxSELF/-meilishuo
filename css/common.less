@@ -2,6 +2,7 @@
 a{text-decoration: none;}
 body,html{color: #666;
   font-size: 12px;
+  overflow: hidden;
   font-family: Arial,'Microsoft YaHei';}
 li{list-style: none}
 
@@ -14,7 +15,10 @@ li{list-style: none}
   background:@bodyRed ;
 }
 
-
+// border
+.border{
+  border:1px solid @bodyRed;
+}
 // 浮动
 .left{float:left;}
 .right{float:right;}
@@ -23,7 +27,8 @@ li{list-style: none}
 
 // 定位
 .pos{position: relative;}
-
+.posA(@left,@top){position: absolute;left:@left;top:@top;}
+.posAR(@right,@top){position: absolute;right:@right;top:@top;}
 
 // 设置背景色
 .bgColor(@color){
