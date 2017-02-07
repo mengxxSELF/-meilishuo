@@ -127,11 +127,10 @@ header{
 
 /* 四个图片部分*/
 .boxs-four{
-  overflow: hidden;
+  overflow: hidden; margin-top: 20px;
   li{margin-right: 20px; .size(285px,285px); .left;
   }
   li:last-of-type{margin-right: 0;}
-
 };
 /* 广告部分*/
 .act{
@@ -139,11 +138,13 @@ header{
 }
 /* 多个产品部分 */
 .pros {
-  ul{overflow: hidden;}
+  ul{overflow: hidden; padding-top: 20px;border-top: 1px solid #eee; }
   li{
     width:224px;float: left; margin-right: 20px;
-    &:last-of-type{margin-right: 0;}
+    &:nth-of-type(5n){margin-right: 0;}
+    &:nth-of-type(n+6){margin-top: 40px;}
   }
+
   figure{ .size(224px,340px);   }
   .desc{
     h3{    margin-top: 16px; font-weight: normal; font-size: 14px;}
@@ -162,6 +163,7 @@ header{
     .btn-buy{    text-align: center; display: block; border-radius: 36px;  line-height: 36px; .size(96px,36px); color: #fff; .bodyColor;  }
   }
   a:hover{ color: @bodyRed; }
+  .loading{display: none; padding: 20px; text-align: center; }
 }
 
 

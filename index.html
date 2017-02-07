@@ -377,6 +377,7 @@
                 </li>
                 -->
             </ul>
+            <p class="loading"></p>
         </div>
     </div>
 </section>
@@ -387,11 +388,15 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/meilishuo.js"></script>
 <script src="js/banner.js"></script>
+<script src="js/lazyImg.js"></script>
 <script>
     // banner图片渐隐渐现
     new Banner({
         ele:$('.banner')
-    })
+    });
+    // 图片延迟加载
+    new LazyImg($('.pros ul')[0],'./imgs/loading.png');
+
 </script>
 </body>
 </html>
