@@ -1,15 +1,15 @@
 
 /*common*/
-// µÃµ½Ëæ»úÊı
+// å¾—åˆ°éšæœºæ•°
 function getRan(b,a){
     a=a||0;
     return Math.round(Math.random()*(b-a)+a);
 }
 
-/* Ö÷Ìå²¿·Ö */
+/* ä¸»ä½“éƒ¨åˆ† */
 ~function (){
-    /* ´¦Àíbanner×ó²à µ¼º½²¿·Ö */
-//    Á¬½ÓËæ»úÏÔÊ¾ºìÉ«
+    /* å¤„ç†bannerå·¦ä¾§ å¯¼èˆªéƒ¨åˆ† */
+//    è¿æ¥éšæœºæ˜¾ç¤ºçº¢è‰²
     var ranAry=[] ,n=0;
     while(n<10){
         ranAry.push(getRan($('.outer-ul:first-child a').length));
@@ -19,10 +19,51 @@ function getRan(b,a){
         $('.outer-ul>li>a ,.inner-ul a ').eq(ranAry[i]).addClass('red');
     }
 
-// »®¹ıÏÔÊ¾Òş²Ø
+// åˆ’è¿‡æ˜¾ç¤ºéšè—
     $('.outer-ul>li').hover(function () {
         $(this).toggleClass('hover').children('.inner-ul').toggle();
     })
+
+//    äº§å“éƒ¨åˆ†
+//    å››ä¸ªå›¾ç‰‡éƒ¨åˆ†
+
+    $.getJSON('./imgs4.json', function (data) {
+        var str='';
+        $.each(data, function (index,item) {
+            str+='<li><a href=""><img src="'+item['imgSrc']+'" alt=""/></a></li>'
+        });
+        $('.boxs-four').html(str);
+    })
+//     æ‰€æœ‰äº§å“å±•ç¤º
+    $.getJSON('./products.json', function (data) {
+        var str='';
+        $.each(data, function (index,item) {
+            str+='<li>\
+                <figure><a href=""><img src="'+item['imgSrc']+'" alt=""/></a></figure>\
+            <section class="desc">\
+                <h3 class="title"><a href="">'+item['title']+'</a></h3>\
+            <p class="price"> <b>'+item['priceNow']+'</b> <span>'+item['priceOld']+'</span>  </p>\
+            <div class="buy">\
+                <div class="left">\
+                <span  >ä»…å‰©'+item['number']+'ä»¶</span>\
+                <p> <b class="after" data-total="'+item['total']+'" data-last="'+item['number']+'"></b> </p>\
+                </div>\
+                <div class="right">\
+                <a class="btn btn-buy" href="">ç«‹å³è´­ä¹°</a>\
+                </div>\
+                </div>\
+                </section>\
+                </li>';
+        });
+        $('.pros ul').html(str);
+        // æ³¨æ„åœ¨äº§å“é‚£é‡Œ æœ‰ä¸€ä¸ªå‰©ä½™äº§å“ä»¶æ•° éœ€è¦æ ¹æ®è®¡ç®—å¾—å‡ºçœŸæ­£é•¿åº¦
+        $('.buy .left b').each(function (index,item) {
+            var total = $(item).attr('data-total');
+            var last = $(item).attr('data-last');
+            $(item).css('width',(last/total).toFixed(2)*100+'%');
+        });
+    })
+
 
 
 }();

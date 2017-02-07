@@ -123,7 +123,46 @@ header{
 
 }
 
+/*  产品部分 */
 
+/* 四个图片部分*/
+.boxs-four{
+  overflow: hidden;
+  li{margin-right: 20px; .size(285px,285px); .left;
+  }
+  li:last-of-type{margin-right: 0;}
+
+};
+/* 广告部分*/
+.act{
+  margin-top: 20px;
+}
+/* 多个产品部分 */
+.pros {
+  ul{overflow: hidden;}
+  li{
+    width:224px;float: left; margin-right: 20px;
+    &:last-of-type{margin-right: 0;}
+  }
+  figure{ .size(224px,340px);   }
+  .desc{
+    h3{    margin-top: 16px; font-weight: normal; font-size: 14px;}
+    .price{ line-height: 28px;height: 28px; margin-top: 10px;
+      b{ font-size: 22px;color: @bodyRed; margin-right: 4px; font-weight: normal;  }
+      span{font-size: 10px;  color: #999;  line-height: 32px; text-decoration: line-through;   }
+    }
+  }
+  .buy{overflow: hidden;margin-top: 10px;
+     span{
+       font-size: 10px; color: @bodyRed;
+     }
+     p{.size(96px,5px); border: 1px solid #FFA811; margin-top: 7px; border-radius: 7px; .pos;
+       b.after{ .posA(0,0); width: 20%;background: #FFA811;   display: block; height: 5px;   }
+     }
+    .btn-buy{    text-align: center; display: block; border-radius: 36px;  line-height: 36px; .size(96px,36px); color: #fff; .bodyColor;  }
+  }
+  a:hover{ color: @bodyRed; }
+}
 
 
 

@@ -276,3 +276,97 @@ header .search-navs li {
   width: 896px;
   height: 447px;
 }
+/*  产品部分 */
+/* 四个图片部分*/
+.boxs-four {
+  overflow: hidden;
+}
+.boxs-four li {
+  margin-right: 20px;
+  width: 285px;
+  height: 285px;
+  float: left;
+}
+.boxs-four li:last-of-type {
+  margin-right: 0;
+}
+/* 广告部分*/
+.act {
+  margin-top: 20px;
+}
+/* 多个产品部分 */
+.pros ul {
+  overflow: hidden;
+}
+.pros li {
+  width: 224px;
+  float: left;
+  margin-right: 20px;
+}
+.pros li:last-of-type {
+  margin-right: 0;
+}
+.pros figure {
+  width: 224px;
+  height: 340px;
+}
+.pros .desc h3 {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.pros .desc .price {
+  line-height: 28px;
+  height: 28px;
+  margin-top: 10px;
+}
+.pros .desc .price b {
+  font-size: 22px;
+  color: #ff3366;
+  margin-right: 4px;
+  font-weight: normal;
+}
+.pros .desc .price span {
+  font-size: 10px;
+  color: #999;
+  line-height: 32px;
+  text-decoration: line-through;
+}
+.pros .buy {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.pros .buy span {
+  font-size: 10px;
+  color: #ff3366;
+}
+.pros .buy p {
+  width: 96px;
+  height: 5px;
+  border: 1px solid #FFA811;
+  margin-top: 7px;
+  border-radius: 7px;
+  position: relative;
+}
+.pros .buy p b.after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  background: #FFA811;
+  display: block;
+  height: 5px;
+}
+.pros .buy .btn-buy {
+  text-align: center;
+  display: block;
+  border-radius: 36px;
+  line-height: 36px;
+  width: 96px;
+  height: 36px;
+  color: #fff;
+  background: #ff3366;
+}
+.pros a:hover {
+  color: #ff3366;
+}

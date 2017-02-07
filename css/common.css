@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body,
+html {
+  color: #666;
+  font-size: 12px;
+  height: 2000px;
+  font-family: Arial, 'Microsoft YaHei';
+}
+li {
+  list-style: none;
+}
+.bodyColor {
+  background: #ff3366;
+}
+.border {
+  border: 1px solid #ff3366;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.display {
+  display: block;
+}
+.pos {
+  position: relative;
+}
